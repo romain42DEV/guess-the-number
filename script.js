@@ -25,7 +25,7 @@ function reponseUtilisateur () {
 
 function comparechiffre (nmbrPioche, nbrUtilisateur) {
 
-    if (choixUtilisateur > 20) {
+    if (nmbrPioche > 20) {
         alert ("erreur")
     }
     // si le nombre est trop petit
@@ -49,9 +49,9 @@ function comparechiffre (nmbrPioche, nbrUtilisateur) {
 // return: rien car elle affiche
 
 function lancerFonctions(){
-    let choixOrdi = nbrAleatoire();
+    let choixOrdi = chiffreAleatoire();
     let choixJoueur = reponseUtilisateur;
-    indiquerPlusOuMoins(choixJoueur, choixOrdi);
+    comparechiffre(choixJoueur, choixOrdi);
 }
 
 lancerFonctions();
